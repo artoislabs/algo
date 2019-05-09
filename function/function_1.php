@@ -10,8 +10,15 @@
 function getNbElement($tab)
 {
 	//A completer
+    //fonction count pour compter element tableau.
+    echo  '<br/>nb elements : ' .count($tab);
 }
 
 $myTab = array('element1', 'element1', 'element1' );
 //doit retourner 3
-echo getNbElement($myTab); 
+
+//affiche elements tableau
+print_r($myTab) .'<br/>';
+
+//appel fonction
+getNbElement($myTab); 

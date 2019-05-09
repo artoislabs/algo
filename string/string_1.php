@@ -8,3 +8,7 @@
 $chaineA = 'Mon premier';
 $chaineB = 'script';
 
+$resultat = $chaineA.' ' .$chaineB;
+
+echo $resultat;
+
