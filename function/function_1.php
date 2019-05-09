@@ -11,8 +11,20 @@ function getNbElement($tab)
 {
 	//A completer
     //fonction count pour compter element tableau.
-    echo  '<br/>nb elements : ' .count($tab);
+    //echo  '<br/>nb elements : ' .count($tab);
+    
+   $resultat =0;
+    
+    foreach($tab as $element) {
+        if ($resultat<$element) {  
+            $resultat = $element;
+            
+        }
+        $resultat++;
+    }
+    echo  '<br>' .$resultat;
 }
+
 
 $myTab = array('element1', 'element1', 'element1' );
 //doit retourner 3
