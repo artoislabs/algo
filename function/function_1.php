@@ -16,14 +16,13 @@ function getNbElement($tab)
    $resultat =0;
     
     foreach($tab as $element) {
-        if ($resultat<$element) {  
-            $resultat = $element;
-            
+       
+             $resultat++;
         }
-        $resultat++;
-    }
+       
+   
     echo  '<br>' .$resultat;
-}
+ }
 
 
 $myTab = array('element1', 'element1', 'element1' );
